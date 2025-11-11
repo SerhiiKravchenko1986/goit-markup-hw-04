@@ -123,8 +123,7 @@ img {
   position: relative;
 }
 
-.nav-link .underline {
-}
+
 
 .nav-item .underline::after {
   display: block;
