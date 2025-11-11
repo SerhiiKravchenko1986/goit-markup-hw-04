@@ -119,6 +119,27 @@ img {
   color: #404bbf;
 }
 
+.nav-item {
+  position: relative;
+}
+
+.nav-link .underline {
+}
+
+.nav-item .underline::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  position: absolute;
+  border-radius: 2px;
+  bottom: -1px;
+}
+.nav-item .underline {
+  color: #404bbf;
+}
+
 .menu-adress {
   display: flex;
   flex-direction: row;
@@ -152,6 +173,16 @@ img {
   padding-bottom: 188px;
   display: block;
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/jpg/people-office.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -235,6 +266,19 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.icon-border {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
 }
 /* #endregion feature*/
 
